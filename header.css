@@ -1,0 +1,259 @@
+p{
+  font-family: Roboto,Arial;
+  margin-top:0;
+  margin-bottom:0;
+}
+body{
+  margin:0;
+  padding-top: 80px;
+  background-color: rgb(248, 247, 247) ;
+  padding-left:96px; 
+  padding-right: 24px;
+}
+.image1,.image2,.image3,.image4,.image5,.image6,.image7,.image8,.image9,.image10,.image11,.image12{
+  width: 100%;
+ 
+}
+
+
+.search-bar{
+  display: block;
+}
+.video-title{
+  margin-top:0;
+  font-size:14px;
+  font-weight:500;
+  line-height:20px;
+  margin-bottom :9px;
+}
+
+
+.video-info-grid{
+display:grid;
+grid-template-columns: 50px 1fr ;
+}
+
+.profile-picture{
+width: 36px;
+border-radius: 50px;
+}
+
+.thumbnail-row{
+margin-bottom: 8px;
+position: relative;
+}
+
+.video-time{
+  font-family: Roboto,Arial;
+  font-size : 12px;
+  font-weight:500;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom:8px;
+  right:4px;
+  border-radius: 2px;
+}
+
+.video-author{
+font-size: 12px;
+color:rgb(96,96,96);
+margin-bottom:4px;
+}
+
+.video-stats{
+font-size:12px;
+color:rgb(96,96,96);
+}
+.video-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 18px ;
+row-gap: 40px;
+}
+
+.header{
+height:55px;
+display: flex;
+justify-content:space-between;
+position:fixed;
+top:0;
+right:0;
+left:0;
+z-index:100 ;
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-style:solid;
+border-bottom-color:rgb(214, 211, 211)
+}
+
+.side-bar{
+  position:fixed;
+  left:0;
+  bottom:0;
+  top: 55px;
+  width:72px;
+  background-color: white;
+  z-index:200;
+  padding-top:5px;
+}
+
+.sidebar-link{
+  height:74px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  cursor:pointer;
+}
+.sidebar-link:hover{
+  background-color: rgb(237, 235, 235);
+  }
+
+.sidebar-link svg{
+  height:25px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family:Roboto,Arial;
+  font-size:10px;
+  
+
+}
+.left-section{
+  width: 200px;
+  margin-left :22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-shrink:0;
+}
+.youtube-icon{
+  padding-right: 60px;
+}
+.search-bar{
+  flex:1;
+  height:36px;
+  padding-left:10px;
+  font-size:16px;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(192, 190, 190);
+  border-radius:2px ;
+  box-shadow:inset 1px 2px 5px rgba(0,0,0,0.05);
+  width:0;
+}
+.search-bar::placeholder{
+  font-family: Roboto,Arial;
+  font-size: 16px;
+}
+
+.hamburger-menu{
+  cursor:pointer;
+}
+.youtube-logo{
+  height:50px;
+}
+
+.middle-section{
+  flex:1;
+  margin-left:50px;
+  margin-right:36px;
+  max-width:650px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button{
+  height:40px;
+  width:66px;
+  background-color:rgb(244, 244, 244);
+  border-width:1px;
+  border-style: solid;
+  border-color:rgb(192, 190, 190);
+  margin-left:-1px;
+  margin-right: 10px;
+  cursor: pointer;
+ 
+}
+
+.upload-icon-container,.bell-icon-container{
+  cursor:pointer;
+}
+
+.search-button,.voice-button,.upload-icon-container,.bell-icon-container{
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.search-button .tool-tip,.voice-button .tool-tip,.upload-icon-container .tool-tip,.bell-icon-container .tool-tip{
+  font-family: Roboto,Arial;
+  position:absolute;
+  background-color:gray;
+  color:white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius:2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity:0;
+  transition: opacity 0.15s;
+  pointer-events:none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tool-tip,.voice-button:hover .tool-tip,.upload-icon-container:hover .tool-tip,.bell-icon-container:hover .tool-tip{
+  opacity: 1;
+ 
+}
+.search-icon{
+  height: 25px;
+  padding-left: 12px;
+  
+}
+.voice-button{
+  height: 40px;
+  border-radius: 20px;
+  padding-left:8px;
+  border:none;
+  background-color:rgb(244, 244, 244);
+  cursor: pointer;
+ 
+}
+.voice-search{
+  height:24px;
+  margin-top:4px;
+
+}
+.right-section{
+  width:200px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-shrink:0;
+}
+.upload-icon{
+  padding-left: 25px;
+  height:25px;
+}
+.bell-icon{
+  height:25px;
+  cursor:pointer;
+}
+
+.current-user-picture{
+  border-radius: 19px;
+  height:38px;
+  margin-right: 20px;
+  cursor:pointer;
+}
